@@ -38,7 +38,7 @@ This PHP project represents my studies on design patterns such as **Command**, *
    - PHP CLI usage can be done directly if running locally.
    - If using Docker, connect to the PHP container:
      ```bash
-     docker exec -it <container_name> bash
+     docker exec -it alura_design_patterns bash
      ```
 
 ## Project Structure
