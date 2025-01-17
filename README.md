@@ -18,29 +18,38 @@ This PHP project represents my studies on design patterns such as **Command**, *
 ## Installation
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/pedro162/alura_design_patterns.git
    cd alura_design_patterns
-
+   ```
 2. Install dependencies:
 
+   ```bash
    composer install
+   ```
 
 3. Start the Docker environment (optional):
 
+   ```bash
    docker-compose up -d
+   ```
 
 4. Access the project:
    - PHP CLI usage can be done directly if running locally.
    - If using Docker, connect to the PHP container:
+     ```bash
      docker exec -it <container_name> bash
+     ```
 
 ## Project Structure
 
-├── src/ # Core application files
-├── testes/ # Test cases
-├── composer.json # Composer configuration
-├── Dockerfile # Docker image definition
-├── docker-compose.yml # Docker Compose setup
+```
+├── src/                  # Core application files
+├── testes/               # Test cases
+├── composer.json         # Composer configuration
+├── Dockerfile            # Docker image definition
+├── docker-compose.yml    # Docker Compose setup
+```
 
 ### Composer Autoload Configuration
 
@@ -59,13 +68,17 @@ The project currently uses:
 
 1. Fork this repository.
 2. Create a new branch for your feature or fix:
+   ```bash
    git checkout -b my-feature-branch
-
+   ```
 3. Commit your changes:
+   ```bash
    git commit -m "Add my new feature"
+   ```
 4. Push your branch:
+   ```bash
    git push origin my-feature-branch
-
+   ```
 5. Open a pull request.
 
 ## License
