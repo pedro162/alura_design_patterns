@@ -1,6 +1,4 @@
-Com base nas informações fornecidas, criei um arquivo `README.md` atualizado para o seu projeto. Aqui está:
-
-````markdown
+````
 # Alura Design Patterns
 
 This PHP project represents my studies on design patterns such as **Command**, **Observer**, **State**, **Strategy**, **Iterator**, and others. It uses modern PHP (version 8.2+) and is structured to follow the PSR-4 autoloading standard.
