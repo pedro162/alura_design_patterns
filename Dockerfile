@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y \
     curl \
     sudo
 
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    && docker-php-ext-install zip
+
 # Instale as extensões do PHP necessárias
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd pdo pdo_mysql

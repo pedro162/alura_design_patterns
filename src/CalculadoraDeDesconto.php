@@ -13,6 +13,9 @@ class CalculadoraDeDesconto
     public function calularDesconto(Orcamento $orcamento): float
     {
         $cadeiaDeDesconto = new DescontoMaisDe5Itnes(new DescontoMaisDe500Reais(new SemDesconto()));
-        return $cadeiaDeDesconto->calcularDesconto($orcamento);
+        $desconto = $cadeiaDeDesconto->calcularDesconto($orcamento);
+        $logDesconto = new LogDesconto();
+        $logDesconto->inormar($desconto);
+        return $desconto;
     }
 }
